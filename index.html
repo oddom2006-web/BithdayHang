@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Surprise for You 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main class="card">
+    <div class="sparkle">✦</div>
+    <p class="eyebrow">A LITTLE BIRTHDAY SURPRISE</p>
+    <h1>Happy Birthday,<br><span>Mean Hang!</span> 🎂</h1>
+    <p class="intro">Hope your special day is full of smiles, laughter, and lovely little moments. 🌸</p>
+
+    <button id="openBtn" class="main-button">Open your surprise 🎁</button>
+
+    <section id="surprise" class="surprise hidden">
+      <div class="confetti" aria-hidden="true">🎉 ✨ 💗 🎀 ✨</div>
+      <h2>A birthday note for you 🌷</h2>
+      <p class="letter">
+        Happy birthday! 🥳 I hope your day is filled with laughter, good surprises,
+        delicious cake, and all the things that make you happy. Thanks for being
+        such a lovely friend. Keep being your wonderful self, keep smiling, and
+        enjoy every moment of your special day. Wishing you lots of happiness
+        and good things in the year ahead! 💗
+      </p>
+
+      <div class="photo-frame">
+        <!-- Replace images/your-photo.jpg with your own photo file -->
+        <img src="images/image.png" alt="A favorite memory" onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='grid';">
+        <div id="photoPlaceholder" class="photo-placeholder">
+          <span>📸</span>
+          <strong>Your favorite photo goes here</strong>
+          <small>Add your photo as <code>your-photo.jpg</code> inside the images folder.</small>
+        </div>
+      </div>
+
+      <p class="final-line">One more time… Happy Birthday! Hope this little surprise made you smile. 🌸</p>
+      <button id="againBtn" class="text-button">Read it again ↻</button>
+    </section>
+    <footer>Made By Oudom</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
